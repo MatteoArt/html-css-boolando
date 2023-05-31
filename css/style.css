@@ -17,7 +17,6 @@ nav {
     max-width: 980px;
     min-height: 50px;
     margin: auto;
-    border: 1px dashed black; /* regola css momentanea */
 }
 #logo {
     width: 100px;
@@ -38,6 +37,7 @@ nav {
 #nav-list li a {
     text-decoration: none;
     color: white;
+    font-weight: bold;
 }
 main {
     display: flex;
@@ -47,11 +47,67 @@ main {
     margin: 100px auto;
 }
 .main-item {
-    border: 1px dashed black; /* momentanea */
     flex-basis: 33.3%;
+    padding: 10px;
+}
+.img-card {
+    position: relative;
+    height: 500px;
+    margin-bottom: 7px;
+}
+.sconto {
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    padding: 4px 10px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+}
+.green-ticket {
+    position: absolute;
+    bottom: 40px;
+    left: 60px;
+    padding: 4px 10px;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    background-color: green;
+}
+.left-0 {
+    left: 0;
+}
+.heart {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    display: inline-block;
+    font-size: xx-large;
+    text-align: center;
+    vertical-align: middle;
+    width: 37px;
+    background-color: white;
+}
+.heart span:hover {
+    color: red;
+    cursor: pointer;
+}
+.img-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.red {
+    color: red;
+    font-weight: bold;
+}
+.line {
+    text-decoration: line-through;
 }
 footer {
-    border: 1px dashed black; /* momentanea */
+    color: white;
+    background-color: #1A1A1A;
 }
 #foot {
     max-width: 980px;
@@ -59,9 +115,26 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    min-height: 100px; /* momentanea */
-    border: 1px dashed black; /* momentanea */
+    min-height: 100px;
+}
+#footer-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    gap: 10px;
+}
+#footer-list li {
+    font-size: small;
 }
 .foot-item {
-    border: 1px dashed black; /* momentanea */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+}
+.foot-span {
+    font-weight: bold;
 }
