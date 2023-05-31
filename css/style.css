@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header {
+    border: 1px dashed black;
+
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 980px;
+    margin: auto;
+    min-height: 100px; /* regola css momentanea */
+    border: 1px dashed black; /* regola css momentanea */
+}
