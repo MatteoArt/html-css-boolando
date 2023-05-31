@@ -4,7 +4,7 @@
     padding: 0;
 }
 header {
-    border: 1px dashed black;
+    border: 1px dashed black; /* momentanea */
 
 }
 nav {
@@ -15,4 +15,30 @@ nav {
     margin: auto;
     min-height: 100px; /* regola css momentanea */
     border: 1px dashed black; /* regola css momentanea */
+}
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 980px;
+    margin: 100px auto;
+}
+.main-item {
+    border: 1px dashed black; /* momentanea */
+    flex-basis: 33.3%;
+}
+footer {
+    border: 1px dashed black; /* momentanea */
+}
+#foot {
+    max-width: 980px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 100px; /* momentanea */
+    border: 1px dashed black; /* momentanea */
+}
+.foot-item {
+    border: 1px dashed black; /* momentanea */
 }
